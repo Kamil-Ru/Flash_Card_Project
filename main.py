@@ -54,7 +54,7 @@ window.title("Flashy")
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 filip_timer = window.after(3000, card_back)
 
-# Canvas _ main
+# Canvas - main
 canvas = Canvas(width=800, height=526, bg=BACKGROUND_COLOR, highlightthickness=0)
 card_front_image = PhotoImage(file="images/card_front.png")
 card_back_image = PhotoImage(file="images/card_back.png")
@@ -65,13 +65,13 @@ canvas.grid(column=0, row=0, columnspan=2)
 canvas_language = canvas.create_text(400, 150, text="", font=("Arial", 40, "italic"))
 canvas_word = canvas.create_text(400, 263, text="", font=("Arial", 60, "bold"))
 
-# Bottom_1 - X (wrong)
+# Buttom_1 - wrong
 button_wrong_image = PhotoImage(file="images/wrong.png")
 button_wrong = Button(image=button_wrong_image, highlightthickness=0, relief=FLAT, bg=BACKGROUND_COLOR,
                       command=new_word)
 button_wrong.grid(column=0, row=1)
 
-# Bottom_2 - X (right)
+# Buttom_2 - right
 button_right_image = PhotoImage(file="images/right.png")
 button_right = Button(image=button_right_image, highlightthickness=0, relief=FLAT, bg=BACKGROUND_COLOR,
                       command=remove_word)
