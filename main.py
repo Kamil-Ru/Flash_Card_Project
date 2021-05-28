@@ -65,13 +65,13 @@ canvas.grid(column=0, row=0, columnspan=2)
 canvas_language = canvas.create_text(400, 150, text="", font=("Arial", 40, "italic"))
 canvas_word = canvas.create_text(400, 263, text="", font=("Arial", 60, "bold"))
 
-# Buttom_1 - wrong
+# Buttom 1 - wrong
 button_wrong_image = PhotoImage(file="images/wrong.png")
 button_wrong = Button(image=button_wrong_image, highlightthickness=0, relief=FLAT, bg=BACKGROUND_COLOR,
                       command=new_word)
 button_wrong.grid(column=0, row=1)
 
-# Buttom_2 - right
+# Buttom 2 - right
 button_right_image = PhotoImage(file="images/right.png")
 button_right = Button(image=button_right_image, highlightthickness=0, relief=FLAT, bg=BACKGROUND_COLOR,
                       command=remove_word)
